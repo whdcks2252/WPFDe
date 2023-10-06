@@ -1,0 +1,17 @@
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\bin\Debug\WPFDesign.exe.config
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\bin\Debug\WPFDesign.exe
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\bin\Debug\WPFDesign.pdb
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\WPFDesign.csproj.AssemblyReference.cache
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\MainWindow.g.cs
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\App.g.cs
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\WPFDesign_MarkupCompile.cache
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\WPFDesign_MarkupCompile.lref
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\MainWindow.baml
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\WPFDesign.g.resources
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\WPFDesign.Properties.Resources.resources
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\WPFDesign.csproj.GenerateResource.cache
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\WPFDesign.csproj.CoreCompileInputs.cache
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\WPFDesign.exe
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\WPFDesign.pdb
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\Styles.baml
+C:\Users\seque\OneDrive\바탕 화면\test\WPFDesign\WPFDesign\obj\Debug\App.baml
