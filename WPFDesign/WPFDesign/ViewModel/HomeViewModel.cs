@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Windows.Data;
 using WPFDesign.Model;
 
-namespace ModernDashboard.ViewModel
+namespace WPFDesign.ViewModel
 {
     public class HomeViewModel : INotifyPropertyChanged
     {
@@ -12,10 +12,10 @@ namespace ModernDashboard.ViewModel
         public ICollectionView HomeSourceCollection => HomeItemsCollection.View;
 
         public HomeViewModel()
-        {           
+        {
             ObservableCollection<HomeItems> homeItems = new ObservableCollection<HomeItems>
             {
-                new HomeItems { HomeName = "This PC", HomeImage = @"Assets/pc_icon.png" },               
+                new HomeItems { HomeName = "This PC", HomeImage = @"Assets/pc_icon.png" },
             };
 
             HomeItemsCollection = new CollectionViewSource { Source = homeItems };

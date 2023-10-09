@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Windows.Data;
 using WPFDesign.Model;
 
-namespace ModernDashboard.ViewModel
+namespace WPFDesign.ViewModel
 {
     public class MovieViewModel : INotifyPropertyChanged
     {
@@ -12,7 +12,7 @@ namespace ModernDashboard.ViewModel
         public ICollectionView MovieSourceCollection => MovieItemsCollection.View;
 
         public MovieViewModel()
-        {           
+        {
             ObservableCollection<MovieItems> movieItems = new ObservableCollection<MovieItems>
             {
 

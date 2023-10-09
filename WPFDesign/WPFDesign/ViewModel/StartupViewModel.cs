@@ -1,7 +1,7 @@
 ﻿
-namespace ModernDashboard.ViewModel
+namespace WPFDesign.ViewModel
 {
-    class StartupViewModel
+   public class StartupViewModel
     {
     }
 }

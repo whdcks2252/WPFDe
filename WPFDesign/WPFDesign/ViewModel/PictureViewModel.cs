@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Windows.Data;
 using WPFDesign.Model;
 
-namespace ModernDashboard.ViewModel
+namespace WPFDesign.ViewModel
 {
     public class PictureViewModel : INotifyPropertyChanged
     {
@@ -12,12 +12,12 @@ namespace ModernDashboard.ViewModel
         public ICollectionView PictureSourceCollection => PictureItemsCollection.View;
 
         public PictureViewModel()
-        {           
+        {
             ObservableCollection<PictureItems> pictureItems = new ObservableCollection<PictureItems>
             {
 
                 new PictureItems { PictureName = "Logo", PictureImage = @"Assets/channel_icon.png" }
-               
+
             };
 
             PictureItemsCollection = new CollectionViewSource { Source = pictureItems };

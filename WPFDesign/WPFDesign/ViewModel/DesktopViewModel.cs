@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Windows.Data;
 using WPFDesign.Model;
 
-namespace ModernDashboard.ViewModel
+namespace WPFDesign.ViewModel
 {
     public class DesktopViewModel : INotifyPropertyChanged
     {
@@ -12,7 +12,7 @@ namespace ModernDashboard.ViewModel
         public ICollectionView DesktopSourceCollection => DesktopItemsCollection.View;
 
         public DesktopViewModel()
-        {            
+        {
             ObservableCollection<DesktopItems> desktopItems = new ObservableCollection<DesktopItems>
             {
                 new DesktopItems { DesktopName = "File", DesktopImage = @"Assets/file_icon.png" },
@@ -21,7 +21,7 @@ namespace ModernDashboard.ViewModel
                 new DesktopItems { DesktopName = "Analytics", DesktopImage = @"Assets/analytics_icon.png" },
                 new DesktopItems { DesktopName = "Webcam", DesktopImage = @"Assets/webcam_icon.png" },
                 new DesktopItems { DesktopName = "Printer", DesktopImage = @"Assets/printer_icon.png" },
-                new DesktopItems { DesktopName = "Services", DesktopImage = @"Assets/services_icon.png" },               
+                new DesktopItems { DesktopName = "Services", DesktopImage = @"Assets/services_icon.png" },
                 new DesktopItems { DesktopName = "Chart", DesktopImage = @"Assets/chart_icon.png" },
                 new DesktopItems { DesktopName = "Film", DesktopImage = @"Assets/film_icon.png" },
                 new DesktopItems { DesktopName = "Alarm", DesktopImage = @"Assets/alarm_icon.png" },

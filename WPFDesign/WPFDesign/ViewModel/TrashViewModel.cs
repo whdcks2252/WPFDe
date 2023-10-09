@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Windows.Data;
 using WPFDesign.Model;
 
-namespace ModernDashboard.ViewModel
+namespace WPFDesign.ViewModel
 {
     public class TrashViewModel : INotifyPropertyChanged
     {
@@ -12,7 +12,7 @@ namespace ModernDashboard.ViewModel
         public ICollectionView TrashSourceCollection => TrashItemsCollection.View;
 
         public TrashViewModel()
-        {           
+        {
             ObservableCollection<TrashItems> trashItems = new ObservableCollection<TrashItems>
             {
 

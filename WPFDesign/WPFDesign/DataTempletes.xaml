@@ -1,0 +1,46 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewModel="clr-namespace:WPFDesign.ViewModel"
+                     xmlns:view="clr-namespace:WPFDesign.View">
+
+    <!--Startup Page-->
+    <DataTemplate DataType="{x:Type viewModel:StartupViewModel}">
+        <view:StartupView/>
+    </DataTemplate>
+    <!--Pc Page-->
+    <DataTemplate DataType="{x:Type viewModel:PCViewModel}">
+        <view:PCView/>
+    </DataTemplate>
+    <!--Home Page-->
+    <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+        <view:HomeView/>
+    </DataTemplate>
+    <!--Desktop Page-->
+    <DataTemplate DataType="{x:Type viewModel:DesktopViewModel}">
+        <view:DesktopView/>
+    </DataTemplate>
+    <!--Document Page-->
+    <DataTemplate DataType="{x:Type viewModel:DocumentViewModel}">
+        <view:DocumentView/>
+    </DataTemplate>
+    <!--Download Page-->
+    <DataTemplate DataType="{x:Type viewModel:DownloadViewModel}">
+        <view:DownloadView/>
+    </DataTemplate>
+    <!--Picture Page-->
+    <DataTemplate DataType="{x:Type viewModel:PictureViewModel}">
+        <view:PictureView/>
+    </DataTemplate>
+    <!--Music Page-->
+    <DataTemplate DataType="{x:Type viewModel:MusicViewModel}">
+        <view:MusicView/>
+    </DataTemplate>
+    <!--Movie Page-->
+    <DataTemplate DataType="{x:Type viewModel:MovieViewModel}">
+        <view:MovieView/>
+    </DataTemplate>
+    <!--Trash Page-->
+    <DataTemplate DataType="{x:Type viewModel:TrashViewModel}">
+        <view:TrashView/>
+    </DataTemplate>
+</ResourceDictionary>

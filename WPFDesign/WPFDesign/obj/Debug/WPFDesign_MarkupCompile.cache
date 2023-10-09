@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\whdck\Desktop\WPFDesign\WPFDesign\WPFDesign\App.xaml
-2-465922755
+131466475259
 
-20966316938
+30321860741
 13-38814620
-MainWindow.xaml;Styles.xaml;
+DataTempletes.xaml;MainWindow.xaml;Styles.xaml;View\DesktopView.xaml;View\DocumentView.xaml;View\DownloadView.xaml;View\HomeView.xaml;View\MovieView.xaml;View\MusicView.xaml;View\PCView.xaml;View\PictureView.xaml;View\StartupView.xaml;View\TrashView.xaml;
 
-False
+True
 

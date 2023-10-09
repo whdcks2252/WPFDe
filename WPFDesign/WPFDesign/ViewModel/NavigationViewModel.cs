@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Data;
+using System.Windows.Input;
 using WPFDesign.Model;
+using WPFDesign.View;
 
 namespace WPFDesign.ViewModel
 {
-    public class NavigationViewModel:ViewModelBase
+    public class NavigationViewModel : ViewModelBase
     {
         private CollectionViewSource MenuItemsCollection;
 
@@ -30,7 +27,7 @@ namespace WPFDesign.ViewModel
                 new MenuItems{MenuName="Trash",MenuImage=@"Assets/Trash_Icon.png"}
             };
 
-            MenuItemsCollection = new CollectionViewSource {Source=menuItems };
+            MenuItemsCollection = new CollectionViewSource { Source = menuItems };
             MenuItemsCollection.Filter += MenuItems_Fillter;
         }
 
@@ -53,18 +50,87 @@ namespace WPFDesign.ViewModel
                 e.Accepted = true;
                 return;
             }
-            MenuItems _items=e.Item as MenuItems;
+            MenuItems _items = e.Item as MenuItems;
 
-            if(_items.MenuName.ToUpper().Contains(FilterText.ToUpper()))
+            if (_items.MenuName.ToUpper().Contains(FilterText.ToUpper()))
             {
-                e.Accepted= true;
+                e.Accepted = true;
             }
             else
             {
-                e.Accepted=false;
+                e.Accepted = false;
             }
 
         }
+
+        //select ViewModel
+        private object _selectedViewModel;
+        public object SelectedViewModel {
+            get => _selectedViewModel;
+            set
+            {
+                _selectedViewModel = value;
+                OpPropertyChanged("SelectedViewModel");
+            }
+        }
+
+        //Switch Views
+        public void SwitchViews(object parameter)
+        {
+            switch (parameter)
+            {
+                case "Home":
+                    SelectedViewModel = new HomeViewModel();
+                    break;
+                case "Desktop":
+                    SelectedViewModel = new DesktopViewModel();
+                    break;
+                case "Documents":
+                    SelectedViewModel = new DocumentItems();
+                    break;
+                case "Downloads":
+                    SelectedViewModel = new DownloadViewModel();
+                    break;
+                case "Pictures":
+                    SelectedViewModel = new PictureViewModel();
+                    break;
+                case "Music":
+                    SelectedViewModel = new MusicViewModel();
+                    break;
+                case "Movies":
+                    SelectedViewModel = new MovieViewModel();
+                    break;
+                case "Trash":
+                    SelectedViewModel = new TrashViewModel();
+                    break;
+
+                default:
+                    SelectedViewModel = new HomeViewModel();
+                    break;
+            }
+
+        }
+
+        public void PCview()
+        {
+            SelectedViewModel=new PCViewModel();
+        }
+
+        //This PC button Command
+        private ICommand _pccommand;
+        public ICommand Thiscommand
+        {
+            get
+            {
+                if(_pccommand == null)
+                {
+                    _pccommand=new RelayCommand<object>(null,param=> PCView());  
+                }
+                return _pccommand;
+            }
+        }
+
+
 
     }
 }

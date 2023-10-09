@@ -4,12 +4,12 @@ using System.ComponentModel;
 using System.Windows.Data;
 using WPFDesign.Model;
 
-namespace ModernDashboard.ViewModel
+namespace WPFDesign.ViewModel
 {
     public class DocumentViewModel : INotifyPropertyChanged
     {
         private CollectionViewSource DocumentItemsCollection;
-        public ICollectionView DocumentSourceCollection => DocumentItemsCollection.View;       
+        public ICollectionView DocumentSourceCollection => DocumentItemsCollection.View;
 
         public DocumentViewModel()
         {
@@ -19,10 +19,10 @@ namespace ModernDashboard.ViewModel
                 new DocumentItems { DocumentName = "Books", DocumentImage = @"Assets/book_icon.png" },
                 new DocumentItems { DocumentName = "Studio", DocumentImage = @"Assets/studio_icon.png" },
                 new DocumentItems { DocumentName = "Export", DocumentImage = @"Assets/export_icon.png" },
-                new DocumentItems { DocumentName = "Print", DocumentImage = @"Assets/print_icon.png" },                  
-                new DocumentItems { DocumentName = "Orders", DocumentImage = @"Assets/order_icon.png" },              
+                new DocumentItems { DocumentName = "Print", DocumentImage = @"Assets/print_icon.png" },
+                new DocumentItems { DocumentName = "Orders", DocumentImage = @"Assets/order_icon.png" },
                 new DocumentItems { DocumentName = "Stocks", DocumentImage = @"Assets/stock_icon.png" },
-                new DocumentItems { DocumentName = "Invoice", DocumentImage = @"Assets/invoice_icon.png" }               
+                new DocumentItems { DocumentName = "Invoice", DocumentImage = @"Assets/invoice_icon.png" }
 
             };
 

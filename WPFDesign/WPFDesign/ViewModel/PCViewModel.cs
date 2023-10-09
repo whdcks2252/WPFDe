@@ -1,10 +1,10 @@
 ﻿
-using WPFDesign.Model;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Data;
+using WPFDesign.Model;
 
-namespace ModernDashboard.ViewModel
+namespace WPFDesign.ViewModel
 {
     public class PCViewModel : INotifyPropertyChanged
     {

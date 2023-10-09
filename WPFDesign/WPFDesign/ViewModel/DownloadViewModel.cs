@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Windows.Data;
 using WPFDesign.Model;
 
-namespace ModernDashboard.ViewModel
+namespace WPFDesign.ViewModel
 {
     public class DownloadViewModel : INotifyPropertyChanged
     {
@@ -12,7 +12,7 @@ namespace ModernDashboard.ViewModel
         public ICollectionView DownloadSourceCollection => DownloadItemsCollection.View;
 
         public DownloadViewModel()
-        {            
+        {
             ObservableCollection<DownloadItems> downloadItems = new ObservableCollection<DownloadItems>
             {
                 new DownloadItems { DownloadName = "Visual Studio 2019", DownloadImage = @"Assets/vs_icon.png" },
