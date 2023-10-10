@@ -124,7 +124,7 @@ namespace WPFDesign.ViewModel
             {
                 if(_pccommand == null)
                 {
-                    _pccommand=new RelayCommand<object>(null,param=> PCView());  
+                  //  _pccommand=new RelayCommand<object>(null,param=> PCView());  
                 }
                 return _pccommand;
             }

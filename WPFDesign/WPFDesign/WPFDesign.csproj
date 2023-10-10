@@ -57,10 +57,6 @@
     </ApplicationDefinition>
     <Compile Include="CommandBase.cs" />
     <Compile Include="RelayCommand.cs" />
-<<<<<<< HEAD
-    <Compile Include="ViewModel\NavigationViewModel.cs" />
-    <Compile Include="ViewModel\ViewModelBase.cs" />
-=======
     <Compile Include="ViewModel\DesktopViewModel.cs" />
     <Compile Include="ViewModel\DocumentViewModel.cs" />
     <Compile Include="ViewModel\DownloadViewModel.cs" />
@@ -91,7 +87,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
->>>>>>> 14651828ba98f3077004b634e48ae7875910d971
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -235,12 +230,5 @@
     <Resource Include="Assets\webcam_icon.png" />
     <Resource Include="Assets\wifi_icon.png" />
   </ItemGroup>
-<<<<<<< HEAD
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
-=======
-  <ItemGroup />
->>>>>>> 14651828ba98f3077004b634e48ae7875910d971
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
