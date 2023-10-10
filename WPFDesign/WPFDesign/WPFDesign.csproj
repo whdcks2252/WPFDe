@@ -57,8 +57,41 @@
     </ApplicationDefinition>
     <Compile Include="CommandBase.cs" />
     <Compile Include="RelayCommand.cs" />
+<<<<<<< HEAD
     <Compile Include="ViewModel\NavigationViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
+=======
+    <Compile Include="ViewModel\DesktopViewModel.cs" />
+    <Compile Include="ViewModel\DocumentViewModel.cs" />
+    <Compile Include="ViewModel\DownloadViewModel.cs" />
+    <Compile Include="ViewModel\HomeViewModel.cs" />
+    <Compile Include="ViewModel\MovieViewModel.cs" />
+    <Compile Include="ViewModel\MusicViewModel.cs" />
+    <Compile Include="ViewModel\NavigationViewModel.cs" />
+    <Compile Include="ViewModel\PCViewModel.cs" />
+    <Compile Include="ViewModel\PictureViewModel.cs" />
+    <Compile Include="ViewModel\StartupViewModel.cs" />
+    <Compile Include="ViewModel\TrashViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="View\DesktopView.xaml.cs">
+      <DependentUpon>DesktopView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DocumentView.xaml.cs">
+      <DependentUpon>DocumentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DownloadView.xaml.cs" />
+    <Compile Include="View\HomeView.xaml.cs" />
+    <Compile Include="View\MovieView.xaml.cs" />
+    <Compile Include="View\MusicView.xaml.cs" />
+    <Compile Include="View\PCView.xaml.cs" />
+    <Compile Include="View\PictureView.xaml.cs" />
+    <Compile Include="View\StartupView.xaml.cs" />
+    <Compile Include="View\TrashView.xaml.cs" />
+    <Page Include="DataTempletes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+>>>>>>> 14651828ba98f3077004b634e48ae7875910d971
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,6 +105,46 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DesktopView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DocumentView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DownloadView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\HomeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MovieView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MusicView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PCView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PictureView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\StartupView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TrashView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -162,8 +235,12 @@
     <Resource Include="Assets\webcam_icon.png" />
     <Resource Include="Assets\wifi_icon.png" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Folder Include="View\" />
   </ItemGroup>
+=======
+  <ItemGroup />
+>>>>>>> 14651828ba98f3077004b634e48ae7875910d971
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
